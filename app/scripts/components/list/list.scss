@@ -1,0 +1,29 @@
+﻿
+list{
+
+.toggle-button{
+
+   float:right;
+    height:22px;
+    width:22px;
+
+   background-image:url('../assets/button_down.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 6px;
+
+}
+
+ img.toggle-button:hover, .toggle-button.active:hover{
+    cursor:pointer;
+ }
+
+.toggle-button.active{
+         background-image:url('../assets/button_up.png');
+    }
+
+}
+
+
+
+

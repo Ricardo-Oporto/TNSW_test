@@ -1,0 +1,36 @@
+
+<table class="table">
+
+	<thead id="theader">
+		<tr>
+			<th class="theader" scope="col">Bus ID</th>
+			<th class="theader" scope="col">Route Variant</th>
+			<th class="theader" scope="col">Status</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="info in $ctrl.route.busData track by $index">
+			<td>{{info.busId}}</td>
+			<td>
+				<bold-highlight-chars text="info.routeVariant" start="0" length=3></bold-highlight-chars>
+			</td>
+			<td >
+				<status time="info.deviationFromTimetable" variance="200"></status>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="container">
+		<div class="row">
+		  <div class="col">
+			<textarea  rows="4" placeholder="Enter text here" ng-model="note"></textarea>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col">
+		<button type="button" ng-disabled="!note" class="btn btn-primary btn-save">Save Notes</button>
+		  </div>
+		</div>
+	  </div>
+	  
+

@@ -1,0 +1,9 @@
+<ul>
+    <li ng-repeat="route in $ctrl.data track by $index" ng-init="expand=false">
+       <h3 >
+           {{route.organisation + ' - ' + route.date}}
+            <img ng-click="expand=!expand" ng-class="{'active' : expand}" class="toggle-button"></img>
+        </h3> 
+     <list-item ng-if="expand" route="route"></list-item>
+    </li>
+</ul>
