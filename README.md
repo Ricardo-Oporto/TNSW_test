@@ -1,2 +1,10 @@
 # TNSW_test
-Interview Test
+From terminal:
+
+npm install
+
+bower install
+
+grunt serve
+
+grunt test
